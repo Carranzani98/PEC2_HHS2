@@ -1,0 +1,44 @@
+/* Override boostrap component*/
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  color: $white;
+
+  img{
+    margin-right: 0.5rem;
+    filter: invert(1);
+  }
+
+  &:hover{
+    color: $white;
+  }
+}
+
+/* Override boostrap component*/
+.navbar-nav{
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Override boostrap component*/
+.nav-link{
+  color: $white;
+  text-align: end;
+
+  &:hover{
+    color: $link-text-hv;
+  }
+}
+
+/* Override boostrap component*/
+.navbar-toggler{
+  filter: invert(1);
+}
+
+/* Override boostrap component*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}

@@ -1,0 +1,35 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$header-h: 60px;
+$footer-h: 50px;
+
+$body-min-width: 360px;
+
+$mq-min-width-md: 784px;
+$mq-min-width-lg: 1024px;
+$mq-min-height: 570px;
+
+/* Colors */
+$white: #ffffff;
+$black: #000000;
+$light-yellow: #f4f47d;
+$light-gray: #d2d2d2;
+
+
+$text: $black;
+$light-text: color.adjust($text, $lightness: 50%);
+$body-bg: $white;
+$header-bg: $black;
+$footer-bg: $black;
+$footer-text: $white;
+$btn-bg: $white;
+$link-text-hv: $light-yellow;
+
+/* Bootstrap text colors */
+$primary: $text;
+$secondary: $light-text;

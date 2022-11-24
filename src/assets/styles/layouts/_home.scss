@@ -1,0 +1,62 @@
+.home{
+  max-width: 45em;
+}
+
+@supports (display:grid) {
+  @media (min-width: $mq-min-width-md) and (min-height: $mq-min-height){
+    .home{
+      display: grid;
+      grid-template-rows: 40% 20% 40%;
+      grid-template-columns: 25px 2fr 1fr fit-content(352px) 25px;
+      max-width: 100%;
+      height: 100%;
+      padding: 0 !important;
+      margin-top: -$header-h !important;
+    }
+
+    .home-header{
+      z-index: 2;
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+
+      h1, h2{
+        color: $white !important;
+      }
+
+      h1{
+        font-size: calc(4em + 1.5vw);
+      }
+    }
+
+    .home img{
+      grid-row: 1 / 6;
+      grid-column: 1 / 6;
+      height: calc(100vh - $footer-h);
+      padding: 0 !important;
+      object-fit: cover;
+    }
+
+    .tour-dates{
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+      height: fit-content;
+      padding: 1em;
+      color: $white;
+      background-color: $black;
+      border-radius: 10px;
+      opacity: 0.75;
+    }
+
+    .home hr{
+      opacity: 1;
+    }
+
+    .tour-dates a{
+      color: $white;
+
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+}
