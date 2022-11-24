@@ -1,0 +1,14 @@
+.member-card{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 1rem;
+  background-color: $light-gray;
+  border-radius: 5px;
+
+  img{
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0 auto;
+  }
+}
