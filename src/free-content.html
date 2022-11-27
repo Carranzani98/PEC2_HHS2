@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>PEC2 Isabella</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <include src="./views/header.html"></include>
+      <main>
+        <h1 class="text-center mt-5 mb-4"> Contact Us </h1>
+        <div class="form-container mx-auto px-3">
+          <form name="contact" method="POST" data-netlify="true">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name:</label>
+              <input type="text" name="name" class="form-control" id="nameInput" placeholder="Enter name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your email:</label>
+              <input type="email" name="email" class="form-control" id="emailInput" placeholder="Enter email">
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Select a subject:</label>
+              <select class="form-select" id="subjectSelector">
+                <option selected>Select an option</option>
+                <option>Tickets</option>
+                <option>Merchandising</option>
+                <option>Concerts</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message:</label>
+              <textarea name="message" class="form-control" id="messageTextarea" placeholder="Enter message">
+            </div>
+            
+            <button type="submit" class="btn btn-primary d-grid gap-2 col-6 mx-auto">Send</button>
+          </form>          
+        </div>
+
+        <section class="section-carousel py-5">
+          <div class="carousel">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img
+                    src="./assets/images/festival1.jpeg"
+                    alt="Imagen de un festival"
+                    width="307"
+                    height="307"
+                  />
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="./assets/images/festival2.jpeg"
+                    alt="Imagen de un festival"
+                    width="307"
+                    height="307"
+                  />
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="./assets/images/band3.jpeg"
+                    alt="Imagen de un concierto, cantante"
+                    width="307"
+                    height="307"
+                  />
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="./assets/images/band2.jpeg"
+                    alt="Imagen de una banda"
+                    width="307"
+                    height="307"
+                  />
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="./assets/images/band1.jpeg"
+                    alt="Imagen de una banda"
+                    width="307"
+                    height="307"
+                  />
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="./assets/images/festival3.jpeg"
+                    alt="Imagen de un festival"
+                    width="307"
+                    height="307"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+    </div>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
