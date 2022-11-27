@@ -20,10 +20,12 @@
 //Dependencias de FontAwesome
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
+//Dependencias de Glide carousel
+@import "../../../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+
+@import "../../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
+
+
 
 @import "layouts/layout";
 @import "layouts/header";
@@ -31,3 +33,4 @@
 @import "layouts/home";
 @import "layouts/news";
 @import "layouts/members";
+@import "layouts/free-content";
