@@ -1,10 +1,6 @@
 .footer-contact-input{
   width: 250px;
-  color: $white;
-  text-align: center;
-  background-color: $black;
-  border: none;
-  border-bottom: solid 2px $white;
+  
   &::placeholder{
     font-size: 16px;
     color: $white;
